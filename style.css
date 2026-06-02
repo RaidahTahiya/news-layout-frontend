@@ -1,0 +1,278 @@
+/* 
+Author: Raidah Tahiya
+Date: January 28, 2026
+
+File Description: The following css code designs the intial html blueprint. It uses fonts, color, and layout principles
+                  To create a reponsive web layout for ipads, laptops, and mobiles.
+*/
+
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+#header {
+  margin: 10px 10px 0px 10px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+#title {
+  text-align: center;
+  background-color: rgb(153, 156, 157);
+  margin-top: 0px;
+  margin: 10px 10px 0px 10px;
+
+}
+
+#content {
+  display: flex;
+  gap: 40px;
+  padding: 10px;
+}
+
+#content img {
+  width: 100%;
+  display: block;
+  margin-bottom: 6px;
+  border: 10px solid rgb(153, 156, 157);
+}
+
+#left h1 {
+  margin-top: 0;
+}
+
+#rightl h1 {
+  margin-top: 0;
+}
+
+#rightr h1 {
+  margin-top: 0;
+}
+
+#content p {
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(153, 156, 157);
+}
+
+.computer {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.computer-only {
+  display: block;
+}
+
+.ipad {
+  display: none;
+}
+
+#footer-computer {
+  display: flex;
+  gap: 33%;
+  justify-content: center;
+  background-color: rgb(153, 156, 157);
+  margin: 10px 10px 0px 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+#footer-computer h1 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+}
+
+#footer-computer a {
+  display: block;
+  margin: 3px 0;
+}
+
+#footer-mobile {
+  display: none;
+  background-color: rgb(153, 156, 157);
+  margin: 10px;
+  padding: 10px;
+}
+
+#footer-mobile h1 {
+  margin: 0 0 6px 0;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+#footer-mobile a {
+  display: block;
+  margin: 3px 0;
+}
+
+#footer-mobile a:hover {
+  color: whitesmoke;
+}
+
+
+@media (min-width: 769px) {
+  #title {
+    font-size: 35px;
+  }
+
+  #navlinks {
+    display: flex;
+    gap: 12.2%;
+    font-size: 12px;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #left {
+    width: 45%;
+  }
+
+  #rightl,
+  #rightr {
+    width: 24.5%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .computer {
+    display: none;
+  }
+
+  .computer-only {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  #content {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  #title {
+    font-size: 25px;
+  }
+
+  #footer-mobile {
+    display: block;
+    margin: 10px 10px 0px 10px
+  }
+
+  #footer-computer {
+    display: none;
+  }
+
+  #links a:hover {
+    color: white;
+  }
+
+  #content h1 {
+    font-size: 25px;
+    ;
+  }
+
+  #title h1 {
+    margin: 0;
+  }
+
+  #hamburgmenu {
+    display: none;
+
+  }
+
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .computer {
+    display: none;
+  }
+
+  .computer-only {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .ipad {
+    display: flex;
+  }
+
+  #links {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    font-size: 12px;
+    gap: 50px;
+  }
+
+  #links a:hover {
+    color: white;
+  }
+
+  #content {
+    flex-direction: row;
+  }
+
+  #left {
+    width: 48%;
+  }
+
+  #rightl {
+    width: 48%;
+  }
+
+  #rightr {
+    display: none;
+  }
+
+  #footer-mobile {
+    display: block;
+  }
+
+  #footer-computer {
+    display: none;
+  }
+
+}
